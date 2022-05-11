@@ -71,8 +71,15 @@ using namespace std;
 using namespace std::tr1;
 
 /* dx9 */
-#include "d3d9.h"
-#include "d3dx9.h"
+//#include "d3d9.h"
+//#include "d3dx9.h"
+#include "D3D11.h"
+#include "D3Dcompiler.h"
+#include "DirectXMath.h"
+
+#pragma comment(lib,"dxgi.lib")
+
+
 
 #ifndef _AFXDLL
 /* PhysX */

@@ -4,6 +4,7 @@
 #define __GRAPHIC_DEVICE_H__
 
 #include "Base.h"
+#include "D3Dclass.h"
 
 BEGIN(Engine)
 

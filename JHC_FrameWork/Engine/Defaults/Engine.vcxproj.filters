@@ -190,6 +190,9 @@
     <Filter Include="00.Systems\06.ScreenShot_Manager">
       <UniqueIdentifier>{75d8952c-754b-460d-a0e1-815f393d2f87}</UniqueIdentifier>
     </Filter>
+    <Filter Include="00.Systems\07. D3DClass">
+      <UniqueIdentifier>{2957eb5d-0b91-486d-813e-1ef4bf72c425}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Codes\Base.cpp">
@@ -365,6 +368,9 @@
     </ClCompile>
     <ClCompile Include="..\Codes\ScreenShot_Manager.cpp">
       <Filter>00.Systems\06.ScreenShot_Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\D3DClass.cpp">
+      <Filter>00.Systems\07. D3DClass</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -596,6 +602,9 @@
     </ClInclude>
     <ClInclude Include="..\Codes\ScreenShot_Manager.h">
       <Filter>00.Systems\06.ScreenShot_Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Codes\D3DClass.h">
+      <Filter>00.Systems\07. D3DClass</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

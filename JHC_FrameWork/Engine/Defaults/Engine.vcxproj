@@ -165,7 +165,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>PhysX3CommonDEBUG_x64.lib;PhysX3DEBUG_x64.lib;PxFoundationDEBUG_x64.lib;PxPvdSDKDEBUG_x64.lib;PhysX3ExtensionsDEBUG.lib;PhysX3CookingDEBUG_x64.lib;PhysX3CharacterKinematicDEBUG_x64.lib;d3d9.lib;d3dx9.lib;dxguid.lib;dinput8.lib;fmod_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>PhysX3CommonDEBUG_x64.lib;PhysX3DEBUG_x64.lib;PxFoundationDEBUG_x64.lib;PxPvdSDKDEBUG_x64.lib;PhysX3ExtensionsDEBUG.lib;PhysX3CookingDEBUG_x64.lib;PhysX3CharacterKinematicDEBUG_x64.lib;d3d9.lib;d3dx9.lib;d3d11.lib;d3dcompiler.lib;dxguid.lib;dinput8.lib;fmod_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>cd /d $(SolutionDir)
@@ -230,7 +230,7 @@ call Engine_MFCDebug.bat</Command>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>PhysX3_x64.lib;PhysX3Common_x64.lib;PxFoundation_x64.lib;PxPvdSDK_x64.lib;PhysX3CharacterKinematic_x64.lib;PhysX3Extensions.lib;PhysX3Cooking_x64.lib;d3d9.lib;d3dx9.lib;dxguid.lib;dinput8.lib;fmod_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>PhysX3_x64.lib;PhysX3Common_x64.lib;PxFoundation_x64.lib;PxPvdSDK_x64.lib;PhysX3CharacterKinematic_x64.lib;PhysX3Extensions.lib;PhysX3Cooking_x64.lib;d3d9.lib;d3dx9.lib;d3d11.lib;d3dcompiler.lib;dxguid.lib;dinput8.lib;fmod_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>cd /d $(SolutionDir)
@@ -246,6 +246,7 @@ call Engine_Release.bat</Command>
     <ClCompile Include="..\Codes\Component.cpp" />
     <ClCompile Include="..\Codes\Component_Manager.cpp" />
     <ClCompile Include="..\Codes\Cube_Collider.cpp" />
+    <ClCompile Include="..\Codes\D3DClass.cpp" />
     <ClCompile Include="..\Codes\DataLoad_Manager.cpp" />
     <ClCompile Include="..\Codes\DynamicMesh.cpp" />
     <ClCompile Include="..\Codes\EventManager.cpp" />
@@ -305,6 +306,7 @@ call Engine_Release.bat</Command>
     <ClInclude Include="..\Codes\Component.h" />
     <ClInclude Include="..\Codes\Component_Manager.h" />
     <ClInclude Include="..\Codes\Cube_Collider.h" />
+    <ClInclude Include="..\Codes\D3DClass.h" />
     <ClInclude Include="..\Codes\DataLoad_Manager.h" />
     <ClInclude Include="..\Codes\DynamicMesh.h" />
     <ClInclude Include="..\Codes\EventManager.h" />
