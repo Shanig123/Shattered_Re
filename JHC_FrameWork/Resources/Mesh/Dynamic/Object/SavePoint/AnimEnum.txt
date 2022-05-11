@@ -1,0 +1,4 @@
+enum animID {
+	Idle,                                     //0	frame:[102]
+	End
+};

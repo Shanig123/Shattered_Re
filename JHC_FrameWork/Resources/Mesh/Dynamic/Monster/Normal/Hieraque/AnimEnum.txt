@@ -1,0 +1,15 @@
+enum animID {
+	Anim_Hierarque_Attack_01,                 //0	frame:[59]
+	Anim_Hierarque_Attack_02,                 //1	frame:[68]
+	Anim_Hierarque_Attack_Damocles,           //2	frame:[70]
+	Anim_Hierarque_Death,                     //3	frame:[70]
+	Anim_Hierarque_Idle,                      //4	frame:[149]
+	Anim_Hierarque_Move_Left,                 //5	frame:[59]
+	Anim_Hierarque_Move_Right,                //6	frame:[59]
+	Anim_Hierarque_Move_Back,                 //7	frame:[59]
+	Anim_Hierarque_Move_Front,                //8	frame:[59]
+	Anim_Hierarque_Hit_Front,                 //9	frame:[20]
+	Anim_Hierarque_Hit_Left,                  //10	frame:[26]
+	Anim_Hierarque_Hit_Right,                 //11	frame:[26]
+	End
+};

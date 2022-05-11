@@ -1,0 +1,12 @@
+enum animID {
+	Attack1,                                  //0	frame:[35]
+	Attack2,                                  //1	frame:[44]
+	Attack3,                                  //2	frame:[106]
+	Death,                                    //3	frame:[28]
+	Hit,                                      //4	frame:[31]
+	Idle,                                     //5	frame:[70]
+	WalkFront,                                //6	frame:[51]
+	WalkLeft,                                 //7	frame:[51]
+	WalkRight,                                //8	frame:[51]
+	End
+};

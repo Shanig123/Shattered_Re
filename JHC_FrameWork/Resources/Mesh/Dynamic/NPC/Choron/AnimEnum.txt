@@ -1,0 +1,7 @@
+enum animID {
+	Idle_Look,                                //0	frame:[111]
+	Idle_Left,                                //1	frame:[111]
+	Idle_Right,                               //2	frame:[111]
+	End
+};
+

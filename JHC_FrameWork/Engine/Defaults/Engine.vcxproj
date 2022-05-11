@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MFC_Debug|Win32">
+      <Configuration>MFC_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MFC_Debug|x64">
+      <Configuration>MFC_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F9F0B6AA-A3F9-4EBE-BF98-696676C1B1F6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Engine</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MFC_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MFC_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='MFC_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='MFC_Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MFC_Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../Bin_Debug/</OutDir>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MFC_Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../Bin_MFCDebug/</OutDir>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../Bin_Release/</OutDir>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;ENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MFC_Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;ENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;ENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../Codes/;../Headers/;../PhysX/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>PhysX3CommonDEBUG_x64.lib;PhysX3DEBUG_x64.lib;PxFoundationDEBUG_x64.lib;PxPvdSDKDEBUG_x64.lib;PhysX3ExtensionsDEBUG.lib;PhysX3CookingDEBUG_x64.lib;PhysX3CharacterKinematicDEBUG_x64.lib;d3d9.lib;d3dx9.lib;dxguid.lib;dinput8.lib;fmod_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>cd /d $(SolutionDir)
+call Engine_Debug.bat</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MFC_Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;ENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../Codes/;../Headers/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxguid.lib;dinput8.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>cd /d $(SolutionDir)
+call Engine_MFCDebug.bat</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;ENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;ENGINE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../Codes/;../Headers/;../PhysX/;../PhysXCode/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>PhysX3_x64.lib;PhysX3Common_x64.lib;PxFoundation_x64.lib;PxPvdSDK_x64.lib;PhysX3CharacterKinematic_x64.lib;PhysX3Extensions.lib;PhysX3Cooking_x64.lib;d3d9.lib;d3dx9.lib;dxguid.lib;dinput8.lib;fmod_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>cd /d $(SolutionDir)
+call Engine_Release.bat</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Codes\AniControl.cpp" />
+    <ClCompile Include="..\Codes\Base.cpp" />
+    <ClCompile Include="..\Codes\Calculator.cpp" />
+    <ClCompile Include="..\Codes\Calculator_Picking.cpp" />
+    <ClCompile Include="..\Codes\Camera.cpp" />
+    <ClCompile Include="..\Codes\Component.cpp" />
+    <ClCompile Include="..\Codes\Component_Manager.cpp" />
+    <ClCompile Include="..\Codes\Cube_Collider.cpp" />
+    <ClCompile Include="..\Codes\DataLoad_Manager.cpp" />
+    <ClCompile Include="..\Codes\DynamicMesh.cpp" />
+    <ClCompile Include="..\Codes\EventManager.cpp" />
+    <ClCompile Include="..\Codes\Font_Manager.cpp" />
+    <ClCompile Include="..\Codes\Frustum.cpp" />
+    <ClCompile Include="..\Codes\GameObject.cpp" />
+    <ClCompile Include="..\Codes\GameObject_Manager.cpp" />
+    <ClCompile Include="..\Codes\Graphic_Device.cpp" />
+    <ClCompile Include="..\Codes\HierarchyLoader.cpp" />
+    <ClCompile Include="..\Codes\Key_Manager.cpp" />
+    <ClCompile Include="..\Codes\Layer.cpp" />
+    <ClCompile Include="..\Codes\Light.cpp" />
+    <ClCompile Include="..\Codes\Light_Manager.cpp" />
+    <ClCompile Include="..\Codes\Line.cpp" />
+    <ClCompile Include="..\Codes\Management.cpp" />
+    <ClCompile Include="..\Codes\Management_Shader.cpp" />
+    <ClCompile Include="..\Codes\Mesh.cpp" />
+    <ClCompile Include="..\Codes\Mesh_Manager.cpp" />
+    <ClCompile Include="..\Codes\Mesh_Picking.cpp" />
+    <ClCompile Include="..\Codes\MyFont.cpp" />
+    <ClCompile Include="..\Codes\Optimization.cpp" />
+    <ClCompile Include="..\Codes\Particle_Base.cpp" />
+    <ClCompile Include="..\Codes\Particle_Manager.cpp" />
+    <ClCompile Include="..\Codes\PhysX_Manager.cpp" />
+    <ClCompile Include="..\Codes\Renderer.cpp" />
+    <ClCompile Include="..\Codes\MyRenderTarget.cpp" />
+    <ClCompile Include="..\Codes\RenderTarget_Manager.cpp" />
+    <ClCompile Include="..\Codes\Scene.cpp" />
+    <ClCompile Include="..\Codes\Scene_Manager.cpp" />
+    <ClCompile Include="..\Codes\ScreenShot_Manager.cpp" />
+    <ClCompile Include="..\Codes\Shader.cpp" />
+    <ClCompile Include="..\Codes\Sound_Manager.cpp" />
+    <ClCompile Include="..\Codes\Sphere_Collider.cpp" />
+    <ClCompile Include="..\Codes\StaticMesh.cpp" />
+    <ClCompile Include="..\Codes\Texture.cpp" />
+    <ClCompile Include="..\Codes\Timer.cpp" />
+    <ClCompile Include="..\Codes\Time_Manager.cpp" />
+    <ClCompile Include="..\Codes\TrailEffect.cpp" />
+    <ClCompile Include="..\Codes\Transform.cpp" />
+    <ClCompile Include="..\Codes\UIBase.cpp" />
+    <ClCompile Include="..\Codes\VIBuffer.cpp" />
+    <ClCompile Include="..\Codes\VIBuffer_CubeTexture.cpp" />
+    <ClCompile Include="..\Codes\VIBuffer_RectColor.cpp" />
+    <ClCompile Include="..\Codes\VIBuffer_RectTexture.cpp" />
+    <ClCompile Include="..\Codes\VIBuffer_RectTextureDynamic.cpp" />
+    <ClCompile Include="..\Codes\VIBuffer_Screen.cpp" />
+    <ClCompile Include="..\Codes\VIBuffer_TerrainColor.cpp" />
+    <ClCompile Include="..\Codes\VIBuffer_TerrainTexture.cpp" />
+    <ClCompile Include="..\Codes\VIBuffer_TriColor.cpp" />
+    <ClCompile Include="..\Codes\XYZLine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Codes\AniControl.h" />
+    <ClInclude Include="..\Codes\Base.h" />
+    <ClInclude Include="..\Codes\Calculator.h" />
+    <ClInclude Include="..\Codes\Camera.h" />
+    <ClInclude Include="..\Codes\Component.h" />
+    <ClInclude Include="..\Codes\Component_Manager.h" />
+    <ClInclude Include="..\Codes\Cube_Collider.h" />
+    <ClInclude Include="..\Codes\DataLoad_Manager.h" />
+    <ClInclude Include="..\Codes\DynamicMesh.h" />
+    <ClInclude Include="..\Codes\EventManager.h" />
+    <ClInclude Include="..\Codes\Font_Manager.h" />
+    <ClInclude Include="..\Codes\Frustum.h" />
+    <ClInclude Include="..\Codes\GameObject.h" />
+    <ClInclude Include="..\Codes\GameObject_Manager.h" />
+    <ClInclude Include="..\Codes\Graphic_Device.h" />
+    <ClInclude Include="..\Codes\HierarchyLoader.h" />
+    <ClInclude Include="..\Codes\Key_Manager.h" />
+    <ClInclude Include="..\Codes\Layer.h" />
+    <ClInclude Include="..\Codes\Light.h" />
+    <ClInclude Include="..\Codes\Light_Manager.h" />
+    <ClInclude Include="..\Codes\Line.h" />
+    <ClInclude Include="..\Codes\Management.h" />
+    <ClInclude Include="..\Codes\Mesh.h" />
+    <ClInclude Include="..\Codes\Mesh_Manager.h" />
+    <ClInclude Include="..\Codes\MyFont.h" />
+    <ClInclude Include="..\Codes\Optimization.h" />
+    <ClInclude Include="..\Codes\ParticlePattern.h" />
+    <ClInclude Include="..\Codes\Particle_Base.h" />
+    <ClInclude Include="..\Codes\Particle_Manager.h" />
+    <ClInclude Include="..\Codes\PhysX_Manager.h" />
+    <ClInclude Include="..\Codes\Renderer.h" />
+    <ClInclude Include="..\Codes\MyRenderTarget.h" />
+    <ClInclude Include="..\Codes\RenderTarget_Manager.h" />
+    <ClInclude Include="..\Codes\Scene.h" />
+    <ClInclude Include="..\Codes\Scene_Manager.h" />
+    <ClInclude Include="..\Codes\ScreenShot_Manager.h" />
+    <ClInclude Include="..\Codes\Shader.h" />
+    <ClInclude Include="..\Codes\Sound_Manager.h" />
+    <ClInclude Include="..\Codes\Sphere_Collider.h" />
+    <ClInclude Include="..\Codes\StaticMesh.h" />
+    <ClInclude Include="..\Codes\Texture.h" />
+    <ClInclude Include="..\Codes\Timer.h" />
+    <ClInclude Include="..\Codes\Time_Manager.h" />
+    <ClInclude Include="..\Codes\TrailEffect.h" />
+    <ClInclude Include="..\Codes\Transform.h" />
+    <ClInclude Include="..\Codes\UIBase.h" />
+    <ClInclude Include="..\Codes\VIBuffer.h" />
+    <ClInclude Include="..\Codes\VIBuffer_CubeTexture.h" />
+    <ClInclude Include="..\Codes\VIBuffer_RectColor.h" />
+    <ClInclude Include="..\Codes\VIBuffer_RectTexture.h" />
+    <ClInclude Include="..\Codes\VIBuffer_RectTextureDynamic.h" />
+    <ClInclude Include="..\Codes\VIBuffer_Screen.h" />
+    <ClInclude Include="..\Codes\VIBuffer_TerrainColor.h" />
+    <ClInclude Include="..\Codes\VIBuffer_TerrainTexture.h" />
+    <ClInclude Include="..\Codes\VIBuffer_TriColor.h" />
+    <ClInclude Include="..\Codes\XYZLine.h" />
+    <ClInclude Include="..\Headers\Engine_Debug.h" />
+    <ClInclude Include="..\Headers\Engine_Define.h" />
+    <ClInclude Include="..\Headers\Engine_Enum.h" />
+    <ClInclude Include="..\Headers\Engine_Functions.h" />
+    <ClInclude Include="..\Headers\Engine_Includes.h" />
+    <ClInclude Include="..\Headers\Engine_Macro.h" />
+    <ClInclude Include="..\Headers\Engine_Struct.h" />
+    <ClInclude Include="..\Headers\Engine_Typedef.h" />
+    <ClInclude Include="..\Headers\Shader_Blend.hpp" />
+    <ClInclude Include="..\Headers\Shader_DefaultUI.hpp" />
+    <ClInclude Include="..\Headers\Shader_General_Dynamic.hpp" />
+    <ClInclude Include="..\Headers\Shader_General_Effect.hpp" />
+    <ClInclude Include="..\Headers\Shader_General_Environment.hpp" />
+    <ClInclude Include="..\Headers\Shader_General_Static.hpp" />
+    <ClInclude Include="..\Headers\Shader_Player.hpp" />
+    <ClInclude Include="..\Headers\Shader_Shade.hpp" />
+    <ClInclude Include="..\Headers\Shader_Shadow.hpp" />
+    <ClInclude Include="..\Headers\Shader_SkyBox.hpp" />
+    <ClInclude Include="..\Headers\Shader_TotalFuction.h" />
+    <ClInclude Include="..\Headers\Shader_Value.h" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

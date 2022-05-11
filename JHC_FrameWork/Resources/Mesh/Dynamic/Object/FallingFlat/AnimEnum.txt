@@ -1,0 +1,6 @@
+enum animID {
+	Idle,                                     //0	frame:[2]
+	Shaking,                                  //1	frame:[20]
+	DropDown,                                 //2	frame:[30]
+	End
+};

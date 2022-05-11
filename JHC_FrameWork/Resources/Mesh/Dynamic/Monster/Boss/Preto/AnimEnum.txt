@@ -1,0 +1,15 @@
+enum animID {
+	Appear,                                   //0	frame:[100]
+	Attack1,                                  //1	frame:[76]
+	Attack2,                                  //2	frame:[119]
+	Attack3,                                  //3	frame:[65]
+	Back_Dash,                                //4	frame:[23]
+	Death,                                    //5	frame:[137]
+	Idle,                                     //6	frame:[49]
+	ShieldAttack1,                            //7	frame:[99]
+	ShieldAttack2,                            //8	frame:[34]
+	Walk_Forward,                             //9	frame:[73]
+	Walk_Left,                                //10	frame:[73]
+	Walk_Right,                               //11	frame:[73]
+	End
+};

@@ -1,0 +1,4 @@
+enum animID {
+	Idle_Look,                                //0	frame:[120]
+	End
+};

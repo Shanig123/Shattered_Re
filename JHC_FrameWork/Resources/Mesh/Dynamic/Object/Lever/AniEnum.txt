@@ -1,0 +1,5 @@
+enum animID {
+	Lever_Start,		//0	frame:[31]
+	Lever_End,		//1	frame:[30]
+	End
+};

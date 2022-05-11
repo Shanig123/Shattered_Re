@@ -1,0 +1,16 @@
+enum animID {
+	Anim_Andras_Attack1,                      //0	frame:[62]
+	Anim_Andras_Attack3,                      //1	frame:[62]
+	Anim_Andras_Attack4,                      //2	frame:[85]
+	Anim_Andras_Attack5,                      //3	frame:[122]
+	Anim_Andras_Attack6,                      //4	frame:[122]
+	Anim_Andras_Attack7,                      //5	frame:[62]
+	Anim_Andras_Death,                        //6	frame:[234]
+	Anim_Andras_Hit,                          //7	frame:[22]
+	Anim_Andras_MoveForward,                  //8	frame:[39]
+	Anim_Andras_MoveLeft,                     //9	frame:[39]
+	Anim_Andras_MoveRight,                    //10	frame:[39]
+	Anim_Andras_MoveBackward,                 //11	frame:[39]
+	Anim_Andras_Idle,                         //12	frame:[63]
+	End
+};
