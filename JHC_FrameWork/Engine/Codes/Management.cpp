@@ -78,7 +78,7 @@ HRESULT CManagement::Ready_Engine(HINSTANCE _hInst, HWND _hWnd, _uint _iWinCX, _
 #endif // !_AFXDLL
 
 
-	if (FAILED(m_pGraphic_Device->Ready_Graphic_Device(_hWnd, _iWinCX, _iWinCY, _eDisplayMode, _bGraphicLowMode)))
+	if (FAILED(m_pGraphic_Device->Ready_Graphic_Device(_hWnd, _iWinCX, _iWinCY, _eDisplayMode, _bGraphicLowMode,true)))
 	{
 		ERROR_BOX(L"Failed to Ready_Graphic_Device");
 		return E_FAIL;

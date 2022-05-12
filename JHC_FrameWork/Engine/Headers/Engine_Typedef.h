@@ -17,14 +17,18 @@ typedef unsigned long				_ulong;
 typedef float						_float;
 typedef double						_double;
 
-//typedef D3DXVECTOR2					_float2;
-//typedef D3DXVECTOR3					_float3;
-//typedef D3DXVECTOR4					_float4;
-//typedef D3DXQUATERNION				_float4Q;
-//typedef D3DXMATRIX					_float4x4;
+typedef XMFLOAT2					_float2;
+typedef XMFLOAT3					_float3;
+typedef XMFLOAT4					_float4;
+typedef XMFLOAT4					_float4Q;
+typedef XMFLOAT4X4					_float4x4;
+
+//XMVECTOR
 
 //typedef LPDIRECT3D9					_SDK;
 //typedef LPDIRECT3DDEVICE9			_DEVICE;
+typedef ID3D11Device*			_DEVICE;
+
 //typedef LPD3DXFONT					_FONT;
 typedef D3DCOLOR					_COLOR;
 
@@ -37,7 +41,7 @@ typedef D3DCOLOR					_COLOR;
 //typedef LPD3DXANIMATIONCONTROLLER	_ANICONTROLLER;
 //typedef LPDIRECT3DTEXTURE9			_TEXTURE9;
 
-//typedef LPD3DXEFFECT				_EFFECT;
+typedef ID3D10Effect*				_EFFECT;
 //typedef LPDIRECT3DSURFACE9			_SURFACE9;
 
 

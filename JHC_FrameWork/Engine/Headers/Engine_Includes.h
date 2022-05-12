@@ -76,6 +76,7 @@ using namespace std::tr1;
 #include "D3D11.h"
 #include "D3Dcompiler.h"
 #include "DirectXMath.h"
+using namespace DirectX;
 
 #pragma comment(lib,"dxgi.lib")
 

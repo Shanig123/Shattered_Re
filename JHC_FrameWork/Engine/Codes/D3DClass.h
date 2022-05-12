@@ -4,7 +4,6 @@
 #define __D3DCLASS_H__
 
 #include "Base.h"
-#include "DirectXMath.h"
 
 BEGIN(Engine)
 
@@ -24,9 +23,12 @@ public:
 		bool _bFullScreen,
 		float _fScreenDepth,
 		float _fScreenNear); 
-	void Shutdown();
-	void BeginScene(float _fRed, float _fGreen, float _fBlue, float _fAlpha); 
-	void EndScene(); 
+	//void Shutdown();
+	//void BeginScene(float _fRed, float _fGreen, float _fBlue, float _fAlpha); 
+	//void EndScene(); 
+	void Render_Begin(float _fRed, float _fGreen, float _fBlue, float _fAlpha);
+	void Render_End();
+
 	ID3D11Device* GetDevice(); 
 	ID3D11DeviceContext* GetDeviceContext(); 
 	void GetProjectionMatrix(XMMATRIX& _prjMat); 
@@ -34,20 +36,20 @@ public:
 	void GetOrthoMatrix(XMMATRIX& _orthoMat);
 	void GetVideoCardInfo(char* _charCardName, int& _iMemory);
 private: 
-	bool m_vsync_enabled; 
-	int m_videoCardMemory; 
-	char m_videoCardDescription[128]; 
-	IDXGISwapChain* m_pswapChain; 
-	ID3D11Device* m_pdevice; 
-	ID3D11DeviceContext* m_pdeviceContext; 
-	ID3D11RenderTargetView* m_prenderTargetView; 
-	ID3D11Texture2D* m_pdepthStencilBuffer; 
-	ID3D11DepthStencilState* m_pdepthStencilState; 
-	ID3D11DepthStencilView* m_pdepthStencilView; 
-	ID3D11RasterizerState* m_prasterState; 
-	XMMATRIX m_projectionMatrix; 
-	XMMATRIX m_worldMatrix; 
-	XMMATRIX m_orthoMatrix;
+	bool m_bVsync_enabled; 
+	int m_iVideoCardMemory; 
+	char m_cVideoCardDescription[128]; 
+	IDXGISwapChain* m_pSwapChain; 
+	_DEVICE m_pDevice; 
+	ID3D11DeviceContext* m_pDeviceContext; 
+	ID3D11RenderTargetView* m_pRenderTargetView; 
+	ID3D11Texture2D* m_pDepthStencilBuffer; 
+	ID3D11DepthStencilState* m_pDepthStencilState; 
+	ID3D11DepthStencilView* m_pDepthStencilView; 
+	ID3D11RasterizerState* m_pRasterState; 
+	XMMATRIX m_matProjectionMatrix; 
+	XMMATRIX m_matWorldMatrix; 
+	XMMATRIX m_matOrthoMatrix;
 public:
 	virtual void Free() override;
 
